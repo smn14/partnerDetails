@@ -1,0 +1,22 @@
+{
+  "name": "partners",
+  "version": "1.0.0",
+  "description": "fetch partner details api",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "start": "node src/app.js"
+  },
+  "author": "Souraya Nasser",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mocha": "^8.2.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {}
+}
