@@ -1,12 +1,4 @@
 const fs = require('fs');
-const fsPromises = require('fs').promises;
-
-
-const readJson = (filename, callback) => {
-    console.log(filename);
-    const data = fs.readFileSync(filename)
-    callback(JSON.parse(data))
-}
 
 const readFileAsSync = (filename, key) => {
   try {
@@ -17,12 +9,5 @@ const readFileAsSync = (filename, key) => {
       return []
   }
 }
-const readJsonPromise = async (filename)=>{
-  console.log(filename);
-  const data = await fsPromises.readFile(filename)
-                               .catch((err) => console.error('Failed to read file', err));
-  return JSON.parse(data)
-}
-
 
 module.exports = {readJson, readJsonPromise, readFileAsSync}

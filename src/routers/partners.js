@@ -41,7 +41,6 @@ router.get('/partners', async(req, res) => {
         })
         partnersArray = arrayUtils.sortArrayDesc(partnersArray, key)
         
-        // console.log(partnersArray);
         res.status(200).send({partnersArray : partnersArray})
     }catch(e){
       console.log(e)

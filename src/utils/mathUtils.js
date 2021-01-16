@@ -34,7 +34,5 @@ const compareDecimal = (a, b) => {
     return 1
   }
 }
-module.exports = {
-                  calculateDistance
-                , compareDecimal
-                  }
+module.exports = {calculateDistance
+                , compareDecimal}
