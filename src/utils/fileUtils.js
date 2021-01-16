@@ -10,4 +10,4 @@ const readFileAsSync = (filename, key) => {
   }
 }
 
-module.exports = {readJson, readJsonPromise, readFileAsSync}
+module.exports = {readFileAsSync}
